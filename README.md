@@ -2,7 +2,7 @@
 
 A package of density-based clustering methods for anomaly detection.
 
-The respo is located [here](https://github.boozallencsn.com/wcp/density-based-clustering).
+The repo is located [here](https://github.com/schnappv/density-based-clustering).
 
 ## About
 
