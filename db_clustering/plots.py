@@ -6,6 +6,7 @@ import seaborn as sns
 from matplotlib.ticker import MaxNLocator
 from pandas.plotting import register_matplotlib_converters
 from db_clustering.base_dbscan import BaseDBSCAN
+
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
 

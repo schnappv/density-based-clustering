@@ -20,7 +20,7 @@ setup(
         "scikit-learn==0.22.1",
         "scipy==1.3.1",
         "pytest==5.2.1",
-        "jupyter==1.0.0"
+        "jupyter==1.0.0",
     ],
     zip_safe=False,
     url="https://github.com/schnappv/density-based-clustering",

@@ -284,14 +284,19 @@ def test_weighted_dbscan():
     )
     assert_array_equal(
         [0, 1],
-        dbscan([[0], [1]], sample_weight=[5.9, 0.1], eps=1.5, min_samples=6)[0],  # noqa
+        dbscan([[0], [1]], sample_weight=[5.9, 0.1], eps=1.5, min_samples=6)[
+            0
+        ],  # noqa
     )
     assert_array_equal(
         [0, 1],
         dbscan([[0], [1]], sample_weight=[6, 0], eps=1.5, min_samples=6)[0],
     )
     assert_array_equal(
-        [], dbscan([[0], [1]], sample_weight=[6, -1], eps=1.5, min_samples=6)[0]  # noqa
+        [],
+        dbscan([[0], [1]], sample_weight=[6, -1], eps=1.5, min_samples=6)[
+            0
+        ],  # noqa
     )
 
     # for non-negative sample_weight, cores should be identical to repetition
@@ -310,7 +315,9 @@ def test_weighted_dbscan():
 
     # sample_weight should work with precomputed distance matrix
     D = pairwise_distances(X)
-    core3, label3 = dbscan(D, sample_weight=sample_weight, metric="precomputed")  # noqa
+    core3, label3 = dbscan(
+        D, sample_weight=sample_weight, metric="precomputed"
+    )  # noqa
     assert_array_equal(core1, core3)
     assert_array_equal(label1, label3)
 
@@ -386,6 +393,8 @@ def test_dbscan_precomputed_metric_with_initial_rows_zero():
     )
     matrix = sparse.csr_matrix(ar)
     labels = (
-        DBSCAN(eps=0.2, metric="precomputed", min_samples=2).fit(matrix).labels_  # noqa
+        DBSCAN(eps=0.2, metric="precomputed", min_samples=2)
+        .fit(matrix)
+        .labels_  # noqa
     )
     assert_array_equal(labels, [-1, -1, 0, 0, 0, 1, 1])
