@@ -1,4 +1,4 @@
-# `density-based-clustering` v 0.0.3
+# `density-based-clustering` v 0.0.4
 
 A package of density-based clustering methods for anomaly detection.
 
