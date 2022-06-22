@@ -16,7 +16,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "matplotlib==3.1.1",
-        "numpy==1.17.4",
+        "numpy==1.22.0",
         "scikit-learn==0.22.1",
         "scipy==1.3.1",
         "pytest==5.2.1",
