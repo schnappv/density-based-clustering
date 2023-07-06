@@ -18,7 +18,7 @@ setup(
         "matplotlib==3.1.1",
         "numpy==1.22.0",
         "scikit-learn==0.22.1",
-        "scipy==1.3.1",
+        "scipy==1.10.0",
         "pytest==5.2.1",
         "jupyter==1.0.0",
     ],
